@@ -11,15 +11,15 @@ def readme():
         return f.read()
 
 setup(
-      name             =   'pfdcm',
+      name             =   'dcmutils',
       version          =   '0.99.3',
-      description      =   'Path and File DICOM',
+      description      =   'A collection of DICOM related utilities',
       long_description =   readme(),
       author           =   'Rudolph Pienaar',
       author_email     =   'rudolph.pienaar@gmail.com',
       url              =   'https://github.com/FNNDSC/pfcon',
-      packages         =   ['pfdcm'],
-      install_requires =   ['pycurl', 'pyzmq', 'webob', 'pudb', 'psutil', 'pfdcm'],
+      packages         =   ['dcmutils'],
+      install_requires =   ['pycurl', 'pyzmq', 'webob', 'pudb', 'psutil'],
       test_suite       =   'nose.collector',
       tests_require    =   ['nose'],
       scripts          =   ['bin/pfdcm'],
